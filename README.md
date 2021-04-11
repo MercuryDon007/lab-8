@@ -25,4 +25,32 @@ Did you use any formulas?
    
    
  
- 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        < meta charset="UTF-8">
+        <META HTTP-EQUIV="x=UA-Compatible"IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1>
+        <title>Document</title>
+    <head>
+    <body>
+        <h2>Word Count: <span id="count">0</span></h2>
+        <textarea id="input" rows="10"></textarea>
+        
+        <script src="index.js">  </script>
+        
+    </body>
+    </html>
+    
+    
+    //the counter will update as the user enters text
+    <head>
+
+
+    // the counter will update as the user enter text
+    
+    var count = document.getElementbyId(' count ');
+    var input = document.getElementbyId(' input ');    
+
+     //keyup is fired when user's hands have left a key
+     input.addEventListener('keyup", function(e){
