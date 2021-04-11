@@ -24,3 +24,4 @@ Did you use any formulas?
    Any time the software detected the user entering a space key in the text box between words, I simply increased the value of wordCount.
    
    
+ 
