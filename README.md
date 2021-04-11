@@ -53,4 +53,21 @@ Did you use any formulas?
     var input = document.getElementbyId(' input ');    
 
      //keyup is fired when user's hands have left a key
-     input.addEventListener('keyup", function(e){
+     input.addEventListener('keyup", function(e){ wordCounter(e.target.value);});
+     
+     
+     //wordCounter function takes in one argument text
+     //text is the user's input
+     function wordCounter(text) {
+          var text = input.value;
+          var WourdCount = 0;     //start at 0 words before we type anything
+          
+          //increments wordcount every time new word is typed
+          //new word is recognized by the space separating words
+          for (var i = 0; i<= text.length; i++) {
+              if (text.charAt(i) == ' '){
+              wordCount++;
+              }
+            }
+            count.innerText = wordCount;
+          }
